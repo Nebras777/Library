@@ -12,5 +12,7 @@ body {
 }
 
 p {
-    margin: 2rem;
+    margin: 2rem 3rem;
+    font-size: 4rem;
+    font-weight: bold;
 }

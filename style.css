@@ -13,10 +13,12 @@ body {
 .sidebar {
     display: flex;
     flex-direction: column;
+    background-color: rgb(139, 51, 0);
 }
 
 p {
     margin: 2rem 5rem;
     font-size: 4rem;
     font-weight: bold;
+    color: white;
 }

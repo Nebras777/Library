@@ -14,11 +14,29 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(139, 51, 0);
+    align-items: center;
 }
 
 p {
-    margin: 2rem 5rem;
+    margin: 3rem 5rem;
     font-size: 4rem;
     font-weight: bold;
     color: white;
+}
+
+button {
+    width: 135px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+button:hover {
+    background-color: white;
+    color: black;
 }

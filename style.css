@@ -77,14 +77,45 @@ input[type="number"] {
     border: none;
     outline: none;
     border-radius: 3px;
-    transition: outline .1s ease-in-out, transform .1s ease-in-out;
+    transition: transform .1s ease-in-out;
 }
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-    outline: 1px solid black;
-    transform: scale(1.05);
+    outline: none;
+    transform: scaleX(1.05);
 }
+
+input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.checkbox {
+    justify-self: center;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-radius: 3px;
+    position: relative;
+}
+
+.checkbox::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 5px;
+    top: 4px;
+    background-color: white;
+    position: absolute;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+
 
 #github-link {
     position: absolute;

@@ -16,16 +16,16 @@
         <div class="sidebar">
             <p>Library</p>
             <button id="add">+ Add Book</button>
-            <form action="" method="">
+            <form action="" method="" id="form">
                 <label>Book Name:</label>
-                <input type="text" id="book">
+                <input type="text" id="book" autocomplete="off">
                 <label>Author Name:</label>
-                <input type="text" id="author">
+                <input type="text" id="author" autocomplete="off">
                 <label># of Pages:</label>
                 <label>Read yet?</label>
-                <input type="number" min="1" id="pages">
+                <input type="number" min="1" max="9999" id="pages" required>
                 <div class="checkbox"  id="read">
-                    <input type="checkbox">
+                    <span class="read-span"></span>
                 </div>
             </form>
             <button id="submit" type="submit">Submit</button>
